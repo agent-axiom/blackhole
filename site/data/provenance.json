@@ -1,0 +1,112 @@
+{
+  "project": "Axiom Spacetime",
+  "manuscript_source_revision": "00bc6243983dfdc3bae3a15345bf73f9db3e6bc2",
+  "research_repository": "https://github.com/agent-axiom/teleport-research",
+  "research_repository_visibility": "private",
+  "data_source": "experiments/neutral_mouth/results/scattering.json",
+  "data_source_sha256": "713c530a622277d9b47124a993dcb90220397d6b1e591c145b6d9750bade77e0",
+  "manuscript_pdf_sha256": "625cc7318e702010465003028236e917cff1f3195b8d93809c471d6db2ead4e3",
+  "method": "Saved finite-frequency classical master-field scattering calculations; no browser-side numerical scattering solver.",
+  "normalization": "Master Wronskian flux, not a physical quantum-channel probability.",
+  "threshold_formula_status": "Matching prediction; uniform threshold limit is not proved.",
+  "scope": "One extended extremal mouth; ell >= 2, fixed finite M > 0.",
+  "base_solutions": 90,
+  "refinement_solutions": 12,
+  "convergence_data": "convergence.json",
+  "source_manifest": "solver-manifest.json",
+  "numerical_summary": {
+    "scope": "Classical conservative three-channel master operator of one extended extremal mouth. No physical quantum-state fidelity, nonzero fermion rest-mass result, full-wormhole stability theorem, or teleport prototype.",
+    "grid_solves": 90,
+    "refinement_solves": 12,
+    "all_solves_converged": true,
+    "maximum_absolute_flux_defect": 1.5359914451451573e-09,
+    "maximum_interior_flux_defect": 1.0592394183994713e-08,
+    "maximum_boundary_residual": 3.3306690738754696e-16,
+    "maximum_collocation_residual": 1.9999945011858721e-07,
+    "maximum_nodes": 7371,
+    "maximum_absolute_Tneutral_change_tolerance": 1.4871079923040043e-09,
+    "maximum_absolute_Tneutral_change_extent_40_to_80": 3.29967386167862e-05,
+    "maximum_absolute_Tneutral_change_extent_80_to_160": 8.579358213856025e-06,
+    "threshold_status": "Numerically supported matching prediction; no uniform threshold proof",
+    "error_status": "Observed refinement changes; no rigorous global scattering error enclosure",
+    "smallest_frequency": 1e-05,
+    "smallest_frequency_records": [
+      {
+        "ell": 2,
+        "screening": 1.0,
+        "k": 1e-05,
+        "Tneutral": 0.9955560758803088,
+        "T0": 0.9955555555555556,
+        "conversion": 7.526943598937319e-12
+      },
+      {
+        "ell": 2,
+        "screening": 10.0,
+        "k": 1e-05,
+        "Tneutral": 0.9433160863904559,
+        "T0": 0.9433106575963719,
+        "conversion": 8.215598669229725e-12
+      },
+      {
+        "ell": 2,
+        "screening": 100.0,
+        "k": 1e-05,
+        "Tneutral": 0.8972803056811554,
+        "T0": 0.8972715318869164,
+        "conversion": 1.0736385532134914e-11
+      },
+      {
+        "ell": 3,
+        "screening": 1.0,
+        "k": 1e-05,
+        "Tneutral": 0.999770459346732,
+        "T0": 0.9997704315886136,
+        "conversion": 2.8688857978819297e-13
+      },
+      {
+        "ell": 3,
+        "screening": 10.0,
+        "k": 1e-05,
+        "Tneutral": 0.9930563550451754,
+        "T0": 0.9930555555555557,
+        "conversion": 1.0381349963463297e-12
+      },
+      {
+        "ell": 3,
+        "screening": 100.0,
+        "k": 1e-05,
+        "Tneutral": 0.9770456061539234,
+        "T0": 0.9770431588613405,
+        "conversion": 1.5374397066168334e-12
+      },
+      {
+        "ell": 5,
+        "screening": 1.0,
+        "k": 1e-05,
+        "Tneutral": 0.9999947157627525,
+        "T0": 0.9999947152860352,
+        "conversion": 5.74638338662998e-15
+      },
+      {
+        "ell": 5,
+        "screening": 10.0,
+        "k": 1e-05,
+        "Tneutral": 0.9996922503916149,
+        "T0": 0.9996922129886119,
+        "conversion": 3.89619806261911e-14
+      },
+      {
+        "ell": 5,
+        "screening": 100.0,
+        "k": 1e-05,
+        "Tneutral": 0.9972876488672516,
+        "T0": 0.9972873263888888,
+        "conversion": 1.02657756118493e-13
+      }
+    ]
+  },
+  "site_data": "scattering.json",
+  "site_data_sha256": "19614cbe6f016c6c792b25ee09d77a524cdd516d05f2a8ef35ad3482fb176671",
+  "source_manifest_note": "This is the original solver manifest. Its source and artifact hashes identify files in the research repository, not this site's reduced scattering.json. The reduced dataset is identified by site_data_sha256.",
+  "reproduction_scope": "This public site provides the manuscript, derivation and saved numerical data. The numerical solver source remains in the private research repository."
+}

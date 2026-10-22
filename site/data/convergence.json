@@ -1,0 +1,1425 @@
+{
+  "scope": "Classical conservative three-channel master operator of one extended extremal mouth. No physical quantum-state fidelity, nonzero fermion rest-mass result, full-wormhole stability theorem, or teleport prototype.",
+  "cases": [
+    {
+      "parameters": {
+        "ell": 2,
+        "screening": 100.0,
+        "k": 1e-05
+      },
+      "base": {
+        "ell": 2,
+        "screening": 100.0,
+        "M": 100.0,
+        "k": 1e-05,
+        "extent": 40.0,
+        "tol": 2e-07,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 1e-05,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 7237,
+        "iterations": 7,
+        "max_residual": 1.9992369651160188e-07,
+        "boundary_residual": 2.220446049250313e-16,
+        "endpoint_x": [
+          -4000029.403609587,
+          4000031.403609587
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          7.755710991019476,
+          106.24428900898053
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          6.0,
+          106.0
+        ],
+        "r": [
+          [
+            0.3204991135750421,
+            -0.00010473647408863321
+          ],
+          [
+            1.1118838083824223e-06,
+            2.454643699549155e-07
+          ],
+          [
+            2.0236951505570653e-09,
+            -5.571358586674447e-10
+          ]
+        ],
+        "t": [
+          [
+            0.947248808311551,
+            -2.8870433429312355e-05
+          ],
+          [
+            3.8437109981310937e-10,
+            3.072432687365336e-06
+          ],
+          [
+            8.07833274055121e-15,
+            -3.582805195261723e-15
+          ]
+        ],
+        "R": 0.1027196927734133,
+        "T": 0.8972803056905952,
+        "Tneutral": 0.8972803056811554,
+        "Tnn": 0.8972803056811554,
+        "conversion": 1.0736385532134914e-11,
+        "reflected_conversion": 1.2965427660027902e-12,
+        "transmitted_conversion": 9.439842766132124e-12,
+        "flux_error": -1.5359914451451573e-09,
+        "max_interior_flux_error": 9.424726998830124e-09,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.32051282051282054,
+          "neutral_transmission_amplitude": 0.9472441775418398,
+          "Tneutral": 0.8972715318869164,
+          "large_screening_Tneutral": 0.8888888888888888
+        },
+        "T0": 0.8972715318869164,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tighter_tolerance": {
+        "ell": 2,
+        "screening": 100.0,
+        "M": 100.0,
+        "k": 1e-05,
+        "extent": 40.0,
+        "tol": 2e-08,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 1e-05,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 15538,
+        "iterations": 8,
+        "max_residual": 1.9999598544869228e-08,
+        "boundary_residual": 1.1102230246251565e-16,
+        "endpoint_x": [
+          -4000029.403609587,
+          4000031.403609587
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          7.755710991019476,
+          106.24428900898053
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          6.0,
+          106.0
+        ],
+        "r": [
+          [
+            0.32049911369351114,
+            -0.00010439289532715112
+          ],
+          [
+            1.1118842575614959e-06,
+            2.4546436983430373e-07
+          ],
+          [
+            2.0236944245714152e-09,
+            -5.571355523116077e-10
+          ]
+        ],
+        "t": [
+          [
+            0.9472488091041178,
+            -2.8619815633059205e-05
+          ],
+          [
+            3.8350922067805995e-10,
+            3.0724326878754756e-06
+          ],
+          [
+            8.04310560898283e-15,
+            -3.5329928290427896e-15
+          ]
+        ],
+        "R": 0.10271969277749932,
+        "T": 0.8972803071777031,
+        "Tneutral": 0.8972803071682633,
+        "Tnn": 0.8972803071682633,
+        "conversion": 1.0736386533415418e-11,
+        "reflected_conversion": 1.2965437648103783e-12,
+        "transmitted_conversion": 9.43984276860504e-12,
+        "flux_error": -4.4797499043625066e-11,
+        "max_interior_flux_error": 4.355962257562851e-10,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.32051282051282054,
+          "neutral_transmission_amplitude": 0.9472441775418398,
+          "Tneutral": 0.8972715318869164,
+          "large_screening_Tneutral": 0.8888888888888888
+        },
+        "T0": 0.8972715318869164,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tolerance_difference": {
+        "R": 4.086023186467003e-12,
+        "T": 1.4871078812817018e-09,
+        "Tneutral": 1.4871079923040043e-09,
+        "conversion": 1.0012805036304786e-18
+      },
+      "extent_steps": [
+        {
+          "record": {
+            "ell": 2,
+            "screening": 100.0,
+            "M": 100.0,
+            "k": 1e-05,
+            "extent": 80.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 1e-05,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 13985,
+            "iterations": 8,
+            "max_residual": 1.999923582408698e-07,
+            "boundary_residual": 1.1102230246251565e-16,
+            "endpoint_x": [
+              -8000030.789904074,
+              8000032.789904073
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              7.755710991019476,
+              106.24428900898053
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              6.0,
+              106.0
+            ],
+            "r": [
+              [
+                0.3204991136330468,
+                -0.00010454133733602267
+              ],
+              [
+                1.1091806153435724e-06,
+                2.447012394936729e-07
+              ],
+              [
+                9.434267627131532e-10,
+                -7.287549950349037e-10
+              ]
+            ],
+            "t": [
+              [
+                0.9472488085909804,
+                -2.8734303562186648e-05
+              ],
+              [
+                1.2633900226313497e-10,
+                3.068272102167318e-06
+              ],
+              [
+                6.3496820334577484e-15,
+                -4.483735940534857e-16
+              ]
+            ],
+            "R": 0.10271969276975,
+            "T": 0.8972803062121062,
+            "Tneutral": 0.8972803062026921,
+            "Tnn": 0.8972803062026921,
+            "conversion": 1.0704455464101383e-11,
+            "reflected_conversion": 1.2901617552015854e-12,
+            "transmitted_conversion": 9.414293708899798e-12,
+            "flux_error": -1.0181437914980052e-09,
+            "max_interior_flux_error": 8.647598082056618e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.32051282051282054,
+              "neutral_transmission_amplitude": 0.9472441775418398,
+              "Tneutral": 0.8972715318869164,
+              "large_screening_Tneutral": 0.8888888888888888
+            },
+            "T0": 0.8972715318869164,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -3.6632918920531665e-12,
+            "T": 5.215109455392053e-10,
+            "Tneutral": 5.215367027133766e-10,
+            "conversion": -3.1930068033530813e-14
+          },
+          "difference_from_previous": {
+            "R": -3.6632918920531665e-12,
+            "T": 5.215109455392053e-10,
+            "Tneutral": 5.215367027133766e-10,
+            "conversion": -3.1930068033530813e-14
+          }
+        },
+        {
+          "record": {
+            "ell": 2,
+            "screening": 100.0,
+            "M": 100.0,
+            "k": 1e-05,
+            "extent": 160.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 1e-05,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 27607,
+            "iterations": 9,
+            "max_residual": 1.9999943385900705e-07,
+            "boundary_residual": 5.551115123125783e-17,
+            "endpoint_x": [
+              -16000032.176198496,
+              16000034.176198496
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              7.755710991019476,
+              106.24428900898053
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              6.0,
+              106.0
+            ],
+            "r": [
+              [
+                0.3204991135484496,
+                -0.00010490474757868418
+              ],
+              [
+                1.1084653249290713e-06,
+                2.4451539934009956e-07
+              ],
+              [
+                7.338618844128191e-10,
+                -6.90168330806651e-10
+              ]
+            ],
+            "t": [
+              [
+                0.9472488086793099,
+                -2.9003543701832884e-05
+              ],
+              [
+                1.1568984264759309e-10,
+                3.0671896889335467e-06
+              ],
+              [
+                5.67757440366723e-15,
+                -1.2066883132333217e-16
+              ]
+            ],
+            "R": 0.10271969279163656,
+            "T": 0.8972803063949851,
+            "Tneutral": 0.8972803063855775,
+            "Tnn": 0.8972803063855775,
+            "conversion": 1.0696136773254558e-11,
+            "reflected_conversion": 1.2884841719701503e-12,
+            "transmitted_conversion": 9.407652601284408e-12,
+            "flux_error": -8.133782536390299e-10,
+            "max_interior_flux_error": 9.72768166018767e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.32051282051282054,
+              "neutral_transmission_amplitude": 0.9472441775418398,
+              "Tneutral": 0.8972715318869164,
+              "large_screening_Tneutral": 0.8888888888888888
+            },
+            "T0": 0.8972715318869164,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": 1.822327011513636e-11,
+            "T": 7.043898797576276e-10,
+            "Tneutral": 7.044221872476442e-10,
+            "conversion": -4.024875888035624e-14
+          },
+          "difference_from_previous": {
+            "R": 2.1886562007189525e-11,
+            "T": 1.8287893421842227e-10,
+            "Tneutral": 1.8288548453426756e-10,
+            "conversion": -8.318690846825425e-15
+          }
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "ell": 2,
+        "screening": 100.0,
+        "k": 0.3
+      },
+      "base": {
+        "ell": 2,
+        "screening": 100.0,
+        "M": 100.0,
+        "k": 0.3,
+        "extent": 40.0,
+        "tol": 2e-07,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.3,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 6338,
+        "iterations": 6,
+        "max_residual": 1.9994610976111168e-07,
+        "boundary_residual": 5.551115123125783e-17,
+        "endpoint_x": [
+          -142.11153785021313,
+          144.11153785021313
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          7.755710991019476,
+          106.24428900898053
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          6.0,
+          106.0
+        ],
+        "r": [
+          [
+            0.024006809138215665,
+            0.0015912009835995706
+          ],
+          [
+            0.034175894783792994,
+            0.01621672347296098
+          ],
+          [
+            -6.272045084443017e-05,
+            1.7685119779818718e-05
+          ]
+        ],
+        "t": [
+          [
+            0.9916606777445987,
+            0.06154631192577382
+          ],
+          [
+            0.0026590969723050127,
+            0.10394345983776626
+          ],
+          [
+            8.443128177635988e-06,
+            -2.8411506942140724e-06
+          ]
+        ],
+        "R": 0.002009836956658712,
+        "T": 0.9979901620156534,
+        "Tneutral": 0.9871788482965415,
+        "Tnn": 0.9871788482965415,
+        "conversion": 0.012242291870201785,
+        "reflected_conversion": 0.0014309781510897883,
+        "transmitted_conversion": 0.010811313719111997,
+        "flux_error": -1.0276879347514978e-09,
+        "max_interior_flux_error": 5.6599127606915545e-09,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.32051282051282054,
+          "neutral_transmission_amplitude": 0.9472441775418398,
+          "Tneutral": 0.8972715318869164,
+          "large_screening_Tneutral": 0.8888888888888888
+        },
+        "T0": 0.8972715318869164,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tighter_tolerance": {
+        "ell": 2,
+        "screening": 100.0,
+        "M": 100.0,
+        "k": 0.3,
+        "extent": 40.0,
+        "tol": 2e-08,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.3,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 13861,
+        "iterations": 7,
+        "max_residual": 1.9996545453448395e-08,
+        "boundary_residual": 2.220446049250313e-16,
+        "endpoint_x": [
+          -142.11153785021313,
+          144.11153785021313
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          7.755710991019476,
+          106.24428900898053
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          6.0,
+          106.0
+        ],
+        "r": [
+          [
+            0.0240068091166298,
+            0.0015912011496494632
+          ],
+          [
+            0.03417589465545272,
+            0.01621672359602433
+          ],
+          [
+            -6.272045089559847e-05,
+            1.7685119639705916e-05
+          ]
+        ],
+        "t": [
+          [
+            0.9916606778332365,
+            0.061546319108568254
+          ],
+          [
+            0.0026590962442497174,
+            0.1039434597312569
+          ],
+          [
+            8.443128185590786e-06,
+            -2.841150630228094e-06
+          ]
+        ],
+        "R": 0.0020098369513698163,
+        "T": 0.9979901630495859,
+        "Tneutral": 0.9871788493564878,
+        "Tnn": 0.9871788493564878,
+        "conversion": 0.012242291839407029,
+        "reflected_conversion": 0.0014309781463088716,
+        "transmitted_conversion": 0.010811313693098156,
+        "flux_error": 9.556799795973347e-13,
+        "max_interior_flux_error": 2.445000868434022e-10,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.32051282051282054,
+          "neutral_transmission_amplitude": 0.9472441775418398,
+          "Tneutral": 0.8972715318869164,
+          "large_screening_Tneutral": 0.8888888888888888
+        },
+        "T0": 0.8972715318869164,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tolerance_difference": {
+        "R": -5.2888956235397355e-12,
+        "T": 1.0339324951758044e-09,
+        "Tneutral": 1.0599463529104014e-09,
+        "conversion": -3.079475563438905e-11
+      },
+      "extent_steps": [
+        {
+          "record": {
+            "ell": 2,
+            "screening": 100.0,
+            "M": 100.0,
+            "k": 0.3,
+            "extent": 80.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.3,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 13324,
+            "iterations": 7,
+            "max_residual": 1.999406732802935e-07,
+            "boundary_residual": 1.1102230246251565e-16,
+            "endpoint_x": [
+              -276.8349155446664,
+              278.83491554466633
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              7.755710991019476,
+              106.24428900898053
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              6.0,
+              106.0
+            ],
+            "r": [
+              [
+                0.02400273270308103,
+                0.0016008132374077076
+              ],
+              [
+                0.034135344561489735,
+                0.016078513212779397
+              ],
+              [
+                -4.2321884073854526e-05,
+                2.8109653612596312e-05
+              ]
+            ],
+            "t": [
+              [
+                0.9916753502863683,
+                0.06157795603596251
+              ],
+              [
+                0.0030039971630353994,
+                0.10381085712906664
+              ],
+              [
+                6.470922838174529e-06,
+                -5.608392773774328e-07
+              ]
+            ],
+            "R": 0.0020024366969962617,
+            "T": 0.9979975631341726,
+            "Tneutral": 0.9872118450351582,
+            "Tnn": 0.9872118450351582,
+            "conversion": 0.012209461015774041,
+            "reflected_conversion": 0.0014237429167596465,
+            "transmitted_conversion": 0.010785718099014395,
+            "flux_error": -1.6883106024323524e-10,
+            "max_interior_flux_error": 5.796162549920325e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.32051282051282054,
+              "neutral_transmission_amplitude": 0.9472441775418398,
+              "Tneutral": 0.8972715318869164,
+              "large_screening_Tneutral": 0.8888888888888888
+            },
+            "T0": 0.8972715318869164,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -7.40025966245025e-06,
+            "T": 7.401118519267946e-06,
+            "Tneutral": 3.29967386167862e-05,
+            "conversion": -3.283085442774315e-05
+          },
+          "difference_from_previous": {
+            "R": -7.40025966245025e-06,
+            "T": 7.401118519267946e-06,
+            "Tneutral": 3.29967386167862e-05,
+            "conversion": -3.283085442774315e-05
+          }
+        },
+        {
+          "record": {
+            "ell": 2,
+            "screening": 100.0,
+            "M": 100.0,
+            "k": 0.3,
+            "extent": 160.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.3,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 27344,
+            "iterations": 8,
+            "max_residual": 1.9996846542975466e-07,
+            "boundary_residual": 2.7755575615628914e-17,
+            "endpoint_x": [
+              -544.8897515724532,
+              546.8897515724531
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              7.755710991019476,
+              106.24428900898053
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              6.0,
+              106.0
+            ],
+            "r": [
+              [
+                0.024001899215344246,
+                0.0016028929325532985
+              ],
+              [
+                0.0341276753764124,
+                0.01603659698434356
+              ],
+              [
+                -3.577450271623741e-05,
+                2.7535653000446355e-05
+              ]
+            ],
+            "t": [
+              [
+                0.9916791672811648,
+                0.06158614758131646
+              ],
+              [
+                0.003111022003019392,
+                0.10377554087024264
+              ],
+              [
+                5.703198914524466e-06,
+                -2.417703627225452e-07
+              ]
+            ],
+            "R": 0.0020005331391600447,
+            "T": 0.9979994657667716,
+            "Tneutral": 0.9872204243933721,
+            "Tnn": 0.9872204243933721,
+            "conversion": 0.012200914080862876,
+            "reflected_conversion": 0.0014218727074632727,
+            "transmitted_conversion": 0.010779041373399603,
+            "flux_error": -1.0940683914384408e-09,
+            "max_interior_flux_error": 6.742031488649047e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.32051282051282054,
+              "neutral_transmission_amplitude": 0.9472441775418398,
+              "Tneutral": 0.8972715318869164,
+              "large_screening_Tneutral": 0.8888888888888888
+            },
+            "T0": 0.8972715318869164,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -9.303817498667287e-06,
+            "T": 9.303751118183712e-06,
+            "Tneutral": 4.157609683064223e-05,
+            "conversion": -4.13777893389089e-05
+          },
+          "difference_from_previous": {
+            "R": -1.9035578362170368e-06,
+            "T": 1.9026325989157655e-06,
+            "Tneutral": 8.579358213856025e-06,
+            "conversion": -8.546934911165746e-06
+          }
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "ell": 3,
+        "screening": 10.0,
+        "k": 0.01
+      },
+      "base": {
+        "ell": 3,
+        "screening": 10.0,
+        "M": 10.0,
+        "k": 0.01,
+        "extent": 40.0,
+        "tol": 2e-07,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.01,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 6464,
+        "iterations": 7,
+        "max_residual": 1.999001610882562e-07,
+        "boundary_residual": 1.1102230246251565e-16,
+        "endpoint_x": [
+          -4015.587849280204,
+          4017.5878492802035
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          10.0,
+          26.0
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          12.0,
+          22.0
+        ],
+        "r": [
+          [
+            0.07783399672903067,
+            -0.00845502809731026
+          ],
+          [
+            0.00046527268889664803,
+            -0.0005486271724005902
+          ],
+          [
+            -8.094426654368097e-05,
+            6.140396142736966e-05
+          ]
+        ],
+        "t": [
+          [
+            0.9969298584418378,
+            -0.00044602340355140484
+          ],
+          [
+            1.2223800229169167e-06,
+            0.0007152609225994644
+          ],
+          [
+            1.5544083899912572e-07,
+            -7.318439481944249e-10
+          ]
+        ],
+        "R": 0.006130146339811157,
+        "T": 0.9938698531894451,
+        "Tneutral": 0.9938693415897393,
+        "Tnn": 0.9938693415897393,
+        "conversion": 1.0393925758677997e-06,
+        "reflected_conversion": 5.277928700946523e-07,
+        "transmitted_conversion": 5.115997057731474e-07,
+        "flux_error": -4.707437772921708e-10,
+        "max_interior_flux_error": 7.739587304378404e-09,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.08333333333333333,
+          "neutral_transmission_amplitude": 0.9965217285917832,
+          "Tneutral": 0.9930555555555557,
+          "large_screening_Tneutral": 0.9722222222222222
+        },
+        "T0": 0.9930555555555557,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tighter_tolerance": {
+        "ell": 3,
+        "screening": 10.0,
+        "M": 10.0,
+        "k": 0.01,
+        "extent": 40.0,
+        "tol": 2e-08,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.01,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 13843,
+        "iterations": 7,
+        "max_residual": 1.999729801060246e-08,
+        "boundary_residual": 2.220446049250313e-16,
+        "endpoint_x": [
+          -4015.587849280204,
+          4017.5878492802035
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          10.0,
+          26.0
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          12.0,
+          22.0
+        ],
+        "r": [
+          [
+            0.0778339967831388,
+            -0.008455027735609407
+          ],
+          [
+            0.00046527269124377487,
+            -0.0005486271704261398
+          ],
+          [
+            -8.094426673347228e-05,
+            6.14039611247127e-05
+          ]
+        ],
+        "t": [
+          [
+            0.9969298586673138,
+            -0.0004460176667137817
+          ],
+          [
+            1.2223759525956134e-06,
+            0.0007152609225790954
+          ],
+          [
+            1.5544083912229945e-07,
+            -7.318429401293972e-10
+          ]
+        ],
+        "R": 0.006130146342117693,
+        "T": 0.9938698536338951,
+        "Tneutral": 0.9938693420341893,
+        "Tnn": 0.9938693420341893,
+        "conversion": 1.039392575839901e-06,
+        "reflected_conversion": 5.277928701058425e-07,
+        "transmitted_conversion": 5.115997057340583e-07,
+        "flux_error": -2.3987145603143745e-11,
+        "max_interior_flux_error": 3.866286180098655e-10,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.08333333333333333,
+          "neutral_transmission_amplitude": 0.9965217285917832,
+          "Tneutral": 0.9930555555555557,
+          "large_screening_Tneutral": 0.9722222222222222
+        },
+        "T0": 0.9930555555555557,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tolerance_difference": {
+        "R": 2.306536038554352e-12,
+        "T": 4.444500323330658e-10,
+        "Tneutral": 4.444500323330658e-10,
+        "conversion": -2.789872418371489e-17
+      },
+      "extent_steps": [
+        {
+          "record": {
+            "ell": 3,
+            "screening": 10.0,
+            "M": 10.0,
+            "k": 0.01,
+            "extent": 80.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.01,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 13145,
+            "iterations": 8,
+            "max_residual": 1.999959047847132e-07,
+            "boundary_residual": 1.1102230246251565e-16,
+            "endpoint_x": [
+              -8016.974268641324,
+              8018.974268641325
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              10.0,
+              26.0
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              12.0,
+              22.0
+            ],
+            "r": [
+              [
+                0.07783400985836253,
+                -0.008454956756969332
+              ],
+              [
+                0.00046277970166010954,
+                -0.0005463459052337748
+              ],
+              [
+                -7.781695703398783e-05,
+                6.000233155989665e-05
+              ]
+            ],
+            "t": [
+              [
+                0.9969298646482606,
+                -0.0004456691983386183
+              ],
+              [
+                1.0116658449031925e-06,
+                0.0007101503361770297
+              ],
+              [
+                1.5176430287087146e-07,
+                -4.017865417012451e-10
+              ]
+            ],
+            "R": 0.006130141699052926,
+            "T": 0.9938698579631801,
+            "Tneutral": 0.9938693536486335,
+            "Tnn": 0.9938693536486335,
+            "conversion": 1.026629205501681e-06,
+            "reflected_conversion": 5.223146590289861e-07,
+            "transmitted_conversion": 5.043145464726951e-07,
+            "flux_error": -3.3776703656229756e-10,
+            "max_interior_flux_error": 8.635574144655322e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.08333333333333333,
+              "neutral_transmission_amplitude": 0.9965217285917832,
+              "Tneutral": 0.9930555555555557,
+              "large_screening_Tneutral": 0.9722222222222222
+            },
+            "T0": 0.9930555555555557,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -4.640758230825548e-09,
+            "T": 4.773734962881804e-09,
+            "Tneutral": 1.2058894216515625e-08,
+            "conversion": -1.2763370366118568e-08
+          },
+          "difference_from_previous": {
+            "R": -4.640758230825548e-09,
+            "T": 4.773734962881804e-09,
+            "Tneutral": 1.2058894216515625e-08,
+            "conversion": -1.2763370366118568e-08
+          }
+        },
+        {
+          "record": {
+            "ell": 3,
+            "screening": 10.0,
+            "M": 10.0,
+            "k": 0.01,
+            "extent": 160.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.01,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 27255,
+            "iterations": 8,
+            "max_residual": 1.999646129624399e-07,
+            "boundary_residual": 1.1102230246251565e-16,
+            "endpoint_x": [
+              -16018.360625502448,
+              16020.360625502446
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              10.0,
+              26.0
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              12.0,
+              22.0
+            ],
+            "r": [
+              [
+                0.07783401056424405,
+                -0.008454942367424457
+              ],
+              [
+                0.0004621507601759116,
+                -0.000545771694836692
+              ],
+              [
+                -7.703790906792955e-05,
+                5.9570523531983126e-05
+              ]
+            ],
+            "t": [
+              [
+                0.9969298658470848,
+                -0.0004455885261868441
+              ],
+              [
+                1.0012761130037237e-06,
+                0.0007089061693937935
+              ],
+              [
+                1.5074617993856918e-07,
+                -3.316853315136233e-10
+              ]
+            ],
+            "R": 0.006130140184506046,
+            "T": 0.9938698585160034,
+            "Tneutral": 0.9938693559670211,
+            "Tnn": 0.9938693559670211,
+            "conversion": 1.0234825370064786e-06,
+            "reflected_conversion": 5.209335547235214e-07,
+            "transmitted_conversion": 5.025489822829571e-07,
+            "flux_error": -1.2994905151941794e-09,
+            "max_interior_flux_error": 8.625806624529275e-09,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.08333333333333333,
+              "neutral_transmission_amplitude": 0.9965217285917832,
+              "Tneutral": 0.9930555555555557,
+              "large_screening_Tneutral": 0.9722222222222222
+            },
+            "T0": 0.9930555555555557,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -6.155305111096854e-09,
+            "T": 5.32655830554063e-09,
+            "Tneutral": 1.4377281809530018e-08,
+            "conversion": -1.5910038861321037e-08
+          },
+          "difference_from_previous": {
+            "R": -1.5145468802713058e-09,
+            "T": 5.528233426588258e-10,
+            "Tneutral": 2.3183875930143927e-09,
+            "conversion": -3.1466684952024684e-09
+          }
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "ell": 5,
+        "screening": 1.0,
+        "k": 0.0001
+      },
+      "base": {
+        "ell": 5,
+        "screening": 1.0,
+        "M": 1.0,
+        "k": 0.0001,
+        "extent": 40.0,
+        "tol": 2e-07,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.0001,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 6538,
+        "iterations": 7,
+        "max_residual": 1.9993159127840797e-07,
+        "boundary_residual": 1.1102230246251565e-16,
+        "endpoint_x": [
+          -400024.79843715235,
+          400026.7984371523
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          20.534143900269346,
+          42.46585609973066
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          30.0,
+          31.0
+        ],
+        "r": [
+          [
+            0.002297397922326669,
+            -6.855313744568577e-06
+          ],
+          [
+            1.0023197733000601e-07,
+            5.368106323465441e-07
+          ],
+          [
+            -1.5527726841202638e-08,
+            -2.0926512187735334e-07
+          ]
+        ],
+        "t": [
+          [
+            0.999997360855668,
+            1.1462175783822127e-08
+          ],
+          [
+            7.1663533446514845e-09,
+            4.820192348757802e-07
+          ],
+          [
+            1.0958974664960487e-12,
+            -2.1046920300347842e-14
+          ]
+        ],
+        "R": 5.278084551082538e-06,
+        "T": 0.9999947217185337,
+        "Tneutral": 0.9999947217183014,
+        "Tnn": 0.9999947217183014,
+        "conversion": 5.746390052266723e-13,
+        "reflected_conversion": 3.4224510581497795e-13,
+        "transmitted_conversion": 2.3239389941169436e-13,
+        "flux_error": -1.969152618741532e-10,
+        "max_interior_flux_error": 9.854104865425484e-09,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.0022988505747126436,
+          "neutral_transmission_amplitude": 0.9999973576395266,
+          "Tneutral": 0.9999947152860352,
+          "large_screening_Tneutral": 0.9955555555555555
+        },
+        "T0": 0.9999947152860352,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tighter_tolerance": {
+        "ell": 5,
+        "screening": 1.0,
+        "M": 1.0,
+        "k": 0.0001,
+        "extent": 40.0,
+        "tol": 2e-08,
+        "incident_side": "left",
+        "incoming_amplitude": 1.0,
+        "incoming_master_flux_magnitude": 0.0001,
+        "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+        "success": true,
+        "message": "The algorithm converged to the desired accuracy.",
+        "nodes": 13977,
+        "iterations": 8,
+        "max_residual": 1.999715166326362e-08,
+        "boundary_residual": 2.220446049250313e-16,
+        "endpoint_x": [
+          -400024.79843715235,
+          400026.7984371523
+        ],
+        "left_tail_eigenvalues": [
+          0.0,
+          20.534143900269346,
+          42.46585609973066
+        ],
+        "right_tail_eigenvalues": [
+          0.0,
+          30.0,
+          31.0
+        ],
+        "r": [
+          [
+            0.002297397923772967,
+            -6.855088175720997e-06
+          ],
+          [
+            1.0023197515391233e-07,
+            5.36810632460867e-07
+          ],
+          [
+            -1.552772621985533e-08,
+            -2.0926512187567214e-07
+          ]
+        ],
+        "t": [
+          [
+            0.9999973609509998,
+            1.759137541424034e-08
+          ],
+          [
+            7.166350298705468e-09,
+            4.820192347156749e-07
+          ],
+          [
+            1.095946786610082e-12,
+            -2.1053767851711106e-14
+          ]
+        ],
+        "R": 5.278084554635342e-06,
+        "T": 0.9999947219091968,
+        "Tneutral": 0.9999947219089643,
+        "Tnn": 0.9999947219089643,
+        "conversion": 5.746390046951794e-13,
+        "reflected_conversion": 3.422451054814892e-13,
+        "transmitted_conversion": 2.323938992136902e-13,
+        "flux_error": -6.248557227195306e-12,
+        "max_interior_flux_error": 4.872610093187291e-10,
+        "threshold_prediction": {
+          "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+          "neutral_reflection_amplitude": 0.0022988505747126436,
+          "neutral_transmission_amplitude": 0.9999973576395266,
+          "Tneutral": 0.9999947152860352,
+          "large_screening_Tneutral": 0.9955555555555555
+        },
+        "T0": 0.9999947152860352,
+        "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+      },
+      "tolerance_difference": {
+        "R": 3.55280346429291e-15,
+        "T": 1.906631519332791e-10,
+        "Tneutral": 1.9066292988867417e-10,
+        "conversion": -5.314928260821221e-22
+      },
+      "extent_steps": [
+        {
+          "record": {
+            "ell": 5,
+            "screening": 1.0,
+            "M": 1.0,
+            "k": 0.0001,
+            "extent": 80.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.0001,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 12948,
+            "iterations": 8,
+            "max_residual": 1.999687679427231e-07,
+            "boundary_residual": 2.220446049250313e-16,
+            "endpoint_x": [
+              -800026.1847327637,
+              800028.1847327637
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              20.534143900269346,
+              42.46585609973066
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              30.0,
+              31.0
+            ],
+            "r": [
+              [
+                0.0022973979217998444,
+                -6.855478747949428e-06
+              ],
+              [
+                1.0046474970980023e-07,
+                5.253539287950792e-07
+              ],
+              [
+                -2.140198464016391e-08,
+                -1.918359842306965e-07
+              ]
+            ],
+            "t": [
+              [
+                0.9999973608944849,
+                3.8598604506255625e-09
+              ],
+              [
+                1.0162622957840501e-09,
+                4.5992089176636545e-07
+              ],
+              [
+                1.0669870787305298e-12,
+                5.340236754018854e-16
+              ]
+            ],
+            "R": 5.278084532028114e-06,
+            "T": 0.9999947217961461,
+            "Tneutral": 0.9999947217959346,
+            "Tnn": 0.9999947217959346,
+            "conversion": 5.348772657003369e-13,
+            "reflected_conversion": 3.233490062269758e-13,
+            "transmitted_conversion": 2.1152825947336112e-13,
+            "flux_error": -1.1932188570540347e-10,
+            "max_interior_flux_error": 1.0460671329148852e-08,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.0022988505747126436,
+              "neutral_transmission_amplitude": 0.9999973576395266,
+              "Tneutral": 0.9999947152860352,
+              "large_screening_Tneutral": 0.9955555555555555
+            },
+            "T0": 0.9999947152860352,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -1.905442458276143e-14,
+            "T": 7.761247200477328e-11,
+            "Tneutral": 7.763323317533377e-11,
+            "conversion": -3.976173952633534e-14
+          },
+          "difference_from_previous": {
+            "R": -1.905442458276143e-14,
+            "T": 7.761247200477328e-11,
+            "Tneutral": 7.763323317533377e-11,
+            "conversion": -3.976173952633534e-14
+          }
+        },
+        {
+          "record": {
+            "ell": 5,
+            "screening": 1.0,
+            "M": 1.0,
+            "k": 0.0001,
+            "extent": 160.0,
+            "tol": 2e-07,
+            "incident_side": "left",
+            "incoming_amplitude": 1.0,
+            "incoming_master_flux_magnitude": 0.0001,
+            "scope": "classical_conservative_master_flux_not_a_quantum_state_fidelity",
+            "success": true,
+            "message": "The algorithm converged to the desired accuracy.",
+            "nodes": 26471,
+            "iterations": 9,
+            "max_residual": 1.9999100152307862e-07,
+            "boundary_residual": 5.551115123125783e-17,
+            "endpoint_x": [
+              -1600027.5710277504,
+              1600029.5710277504
+            ],
+            "left_tail_eigenvalues": [
+              0.0,
+              20.534143900269346,
+              42.46585609973066
+            ],
+            "right_tail_eigenvalues": [
+              0.0,
+              30.0,
+              31.0
+            ],
+            "r": [
+              [
+                0.002297397921222707,
+                -6.855288182814799e-06
+              ],
+              [
+                1.0014748910526396e-07,
+                5.223971404103876e-07
+              ],
+              [
+                -2.1742469263631177e-08,
+                -1.8714936699916788e-07
+              ]
+            ],
+            "t": [
+              [
+                0.9999973607277561,
+                -7.704010715702001e-09
+              ],
+              [
+                1.0494971283215971e-10,
+                4.5441807554333746e-07
+              ],
+              [
+                1.0526115131217613e-12,
+                -6.116218713149374e-16
+              ]
+            ],
+            "R": 5.2780845218403985e-06,
+            "T": 0.9999947214626845,
+            "Tneutral": 0.999994721462478,
+            "Tnn": 0.999994721462478,
+            "conversion": 5.24921710816969e-13,
+            "reflected_conversion": 3.1842591242090843e-13,
+            "transmitted_conversion": 2.064957983960606e-13,
+            "flux_error": -4.5279358040772877e-10,
+            "max_interior_flux_error": 1.0295994723463764e-08,
+            "threshold_prediction": {
+              "status": "matching_prediction_not_a_proved_uniform_threshold_theorem",
+              "neutral_reflection_amplitude": 0.0022988505747126436,
+              "neutral_transmission_amplitude": 0.9999973576395266,
+              "Tneutral": 0.9999947152860352,
+              "large_screening_Tneutral": 0.9955555555555555
+            },
+            "T0": 0.9999947152860352,
+            "endpoint_error_status": "requires_extent_refinement_separately_from_flux_and_solver_residual"
+          },
+          "difference_from_base": {
+            "R": -2.924213961388389e-14,
+            "T": -2.558491196680279e-10,
+            "Tneutral": -2.558233624938566e-10,
+            "conversion": -4.9717294409703263e-14
+          },
+          "difference_from_previous": {
+            "R": -1.0187715031122462e-14,
+            "T": -3.334615916728012e-10,
+            "Tneutral": -3.334565956691904e-10,
+            "conversion": -9.955554883367926e-15
+          }
+        }
+      ]
+    }
+  ]
+}

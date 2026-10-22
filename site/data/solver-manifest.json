@@ -1,0 +1,32 @@
+{
+  "scope": "Classical conservative three-channel master operator of one extended extremal mouth. No physical quantum-state fidelity, nonzero fermion rest-mass result, full-wormhole stability theorem, or teleport prototype.",
+  "command": "python -m experiments.neutral_mouth.run",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "operator_source": "https://arxiv.org/html/2610.09847v1",
+  "source_equations": [
+    "5.20",
+    "5.21",
+    "5.22"
+  ],
+  "source_sha256": {
+    "experiments/neutral_mouth/model.py": "ef0edcc3b8283857140fb620e65ea2f024cd1329068be6362293f428f06f6664",
+    "experiments/neutral_mouth/check.py": "ef9cce772f0bcbfae002b9dd77c54497a3af2e188be51677ff6114bb24568169",
+    "experiments/neutral_mouth/run.py": "5d3106ca5761432ee22699ce03d0545ff103305dbe989f4a335715b0856f45c6",
+    "experiments/neutral_mouth/config.json": "0472e789a3193af5ee0a1c9220ef598011ef885b6442638e997e93dbe2673bb1",
+    "experiments/neutral_mouth/requirements.txt": "815360a00e0e1d7a128cade3de11b66d3fe997cbd6e2c69f8081eb9bc8b88197"
+  },
+  "artifact_sha256": {
+    "scattering.json": "713c530a622277d9b47124a993dcb90220397d6b1e591c145b6d9750bade77e0",
+    "scattering.csv": "eb08f1d8a541dc5d289671bc1401621ac1564973c9987ce99d2344774f8af309",
+    "convergence.json": "5004c6458d16f144ba78c15cd4f7f6fd6dfaeb737b914216f7c26e80d1ba7991",
+    "summary.json": "10555847a967606097334e0a44c381a7824bfaaa7608bab7e5e34cae0386837c",
+    "neutral-transmission.svg": "afe7f4f7ac86318cf30d11f4c51627d953816dd7f3d92a5d645eb63f68156c8c",
+    "neutral-transmission.pdf": "ca71773e1d514219c285ed1592f74acdfefb3e88523448587c552a92e51fe77b",
+    "neutral-results.tex": "6acfeea50f6b74b5f4c02ec206fea6525119c285587c379fbaa8986d163f31d8"
+  }
+}

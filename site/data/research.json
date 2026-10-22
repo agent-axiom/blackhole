@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-22",
+  "project": "Axiom Spacetime",
+  "papers": [
+    {
+      "number": "01",
+      "slug": "positive-factorization-mouth",
+      "title": "Positive Factorization and a Zero-Energy Resonance of the Schwinger-Coupled Wormhole Mouth",
+      "author": "Dmitry Kosarevsky · Independent Researcher",
+      "date_label": "OCTOBER 2026",
+      "status": "manuscript_endorsement_pending",
+      "status_label": "Manuscript · arXiv endorsement pending",
+      "summary": "An exact positivity identity, a unique bounded threshold resonance, and a conditional weak-attraction binding theorem for a specified three-channel extremal-mouth operator.",
+      "pdf": "./papers/paper-01.pdf",
+      "pages": 8,
+      "source_revision": "00bc6243983dfdc3bae3a15345bf73f9db3e6bc2",
+      "pdf_sha256": "625cc7318e702010465003028236e917cff1f3195b8d93809c471d6db2ead4e3",
+      "arxiv_id": null,
+      "peer_reviewed": false
+    }
+  ]
+}
