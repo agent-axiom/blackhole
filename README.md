@@ -2,7 +2,8 @@
 
 Source for the **Axiom Spacetime** research microsite: an animated introduction, an interactive explorer, and a growing manuscript collection.
 
-**Canonical website:** <https://blackhole.kosarevsky.dev/>  
+**Live preview:** <https://agent-axiom.github.io/blackhole/>  
+**Intended canonical domain:** `blackhole.kosarevsky.dev` — DNS connection pending.  
 **Website repository:** <https://github.com/agent-axiom/blackhole>  
 **Research author:** Dmitry Kosarevsky, Independent Researcher · <if.kosarevsky@gmail.com>
 
@@ -72,6 +73,21 @@ Keep exact results, numerical evidence and planned work clearly labeled. There i
 The [Pages workflow](.github/workflows/pages.yml) verifies pull requests and publishes `site/` after a successful check on `main`. A manual run on `main` is also supported. It uses the official [`configure-pages`, `upload-pages-artifact` and `deploy-pages` workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), without a build step.
 
 In the repository's **Settings → Pages**, select **GitHub Actions** as the publishing source. Configure the canonical domain and its DNS separately. The workflow uploads only `site/`; it does not need access to the private research repository or a personal access token. A successful deployment's URL is recorded in the `github-pages` environment.
+
+### Deployment record · 22 October 2026
+
+The first [verification and deployment](https://github.com/agent-axiom/blackhole/actions/runs/39815739909) succeeded. The live GitHub Pages page was opened and its numerical explorer was checked. Desktop and 375px-wide mobile layouts were inspected before deployment.
+
+The requested custom domain is not connected yet. The DNS provider is Cloudflare, and the sign-in needed to modify that zone was not completed. The working GitHub Pages URL remains enabled. To finish the connection:
+
+1. In this repository's **Settings → Pages**, save `blackhole.kosarevsky.dev` as the custom domain.
+2. In the Cloudflare DNS zone for `kosarevsky.dev`, add a **CNAME** with name **`blackhole`**, target **`agent-axiom.github.io`**, TTL **Auto**, and proxy status **DNS only**. The target has no repository path.
+3. Wait for GitHub's DNS check and certificate provisioning, then enable **Enforce HTTPS** and verify the custom domain, PDF and explorer.
+4. Update the live-link status in this README when the custom domain has actually been verified.
+
+The page metadata already uses the intended canonical domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) when making the connection.
+
+![Published site preview](docs/site-preview-2026-10-22.jpg)
 
 ## Reuse
 
