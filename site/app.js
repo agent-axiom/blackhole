@@ -1,5 +1,17 @@
 import { initHero } from './hero.js';
+import { initBlackHole } from './blackhole.js?v=1';
 import { initExplorer } from './explorer.js';
+
+const blackHoleCanvas = document.getElementById('black-hole-canvas');
+if (blackHoleCanvas) {
+  try {
+    initBlackHole(blackHoleCanvas, document.getElementById('black-hole-pause'), document.querySelector('.hero'));
+  } catch (error) {
+    console.warn('The artistic black-hole scene could not start.', error);
+    blackHoleCanvas.hidden = true;
+    document.getElementById('black-hole-pause').hidden = true;
+  }
+}
 
 const canvas = document.getElementById('hero-canvas');
 if (canvas) {

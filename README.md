@@ -15,7 +15,13 @@ As of **22 October 2026**, the first manuscript is *Positive Factorization and a
 
 The article establishes an explicit positive factorization, a unique bounded zero-energy resonance, and a conditional attractive-perturbation binding result for one specified three-channel extremal-mouth operator. Its input is [Sadhukhan, arXiv:2610.09847v1, Eqs. (5.20)–(5.22)](https://arxiv.org/html/2610.09847v1). See the [manuscript](site/papers/paper-01.pdf) and [derivation note](site/papers/paper-01-derivation.md) for the assumptions and proofs.
 
-The interactive chart displays **90 archived classical master-flux calculations**. Its dotted threshold expression is a matching prediction whose uniform matrix threshold proof remains open. The exact-resonance view uses a single fixed normalization of the symmetrized master variables. The hero shows exact diagonal potential profiles; its moving scan is a spatial guide, not time evolution. These results do not establish a teleportation device or physical qubit fidelity.
+The interactive chart displays **90 archived classical master-flux calculations**. Its dotted threshold expression is a matching prediction whose uniform matrix threshold proof remains open. The exact-resonance view uses a single fixed normalization of the symmetrized master variables. The research section shows exact diagonal potential profiles; their moving scan is a spatial guide, not time evolution. These results do not establish a teleportation device or physical qubit fidelity.
+
+## Interactive opening scene
+
+The opening black hole is an **artistic visualization**, labeled separately from the research figures. Native JavaScript and a small WebGL shader draw a luminous accretion disk, stylized lensed arcs and a distorted star field. Its lens mapping is a compositional approximation, not a ray-traced solution or output from the paper.
+
+The scene follows the cursor with bounded, eased movement within the hero. Touch devices retain normal scrolling and a slow autonomous animation. A keyboard-accessible pause control freezes the scene; reduced-motion preferences select a static frame until the visitor explicitly resumes. Rendering stops offscreen and when the document is hidden. Resolution and frame rate are capped, and a Canvas2D renderer remains available when WebGL cannot be used. No external graphics library, texture download or build step is required.
 
 ## Run locally
 
@@ -33,7 +39,8 @@ Open <http://127.0.0.1:8080/>. Use an HTTP server rather than opening `index.htm
 | Path | Purpose |
 | --- | --- |
 | `site/index.html`, `site/style.css` | Page content, responsive layout and the first featured manuscript. |
-| `site/hero.js` | Explanatory canvas animation, including a pause control. |
+| `site/blackhole.js` | Cursor-responsive artistic black hole, native WebGL with a Canvas2D fallback and motion controls. |
+| `site/hero.js` | Exact diagonal potential profiles in the research section, including a pause control. |
 | `site/explorer.js` | Saved numerical samples and the exact analytic resonance profile. |
 | `site/app.js` | Initializes the page and appends later manuscripts from the registry. |
 | `site/data/research.json` | Manuscript registry and explicit publication/review status. |
