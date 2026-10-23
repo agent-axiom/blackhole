@@ -1,5 +1,5 @@
 import { initHero } from './hero.js';
-import { initBlackHole } from './blackhole.js?v=1';
+import { initBlackHole } from './blackhole.js?v=2';
 import { initExplorer } from './explorer.js';
 
 const blackHoleCanvas = document.getElementById('black-hole-canvas');

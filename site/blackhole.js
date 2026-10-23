@@ -149,7 +149,7 @@ void main() {
 }
 `;
 
-function createWebGLRenderer(onStateChange) {
+function createWebGLRenderer(onStateChange, onFailure) {
   const surface = document.createElement('canvas');
   let gl;
   try {
@@ -157,8 +157,14 @@ function createWebGLRenderer(onStateChange) {
       alpha: false, antialias: false, depth: false, stencil: false,
       powerPreference: 'low-power', preserveDrawingBuffer: false,
     });
-  } catch { return null; }
-  if (!gl) return null;
+  } catch {
+    onFailure('context-creation');
+    return null;
+  }
+  if (!gl) {
+    onFailure('context-unavailable');
+    return null;
+  }
 
   let program = null;
   let buffer = null;
@@ -179,21 +185,34 @@ function createWebGLRenderer(onStateChange) {
     if (destroyed) return false;
     disposeResources();
     const shaders = [];
+    let stage = 'initialization';
     try {
       for (const [type, source] of [[gl.VERTEX_SHADER, VERTEX_SHADER], [gl.FRAGMENT_SHADER, FRAGMENT_SHADER]]) {
+        stage = 'shader-allocation';
         const shader = gl.createShader(type);
         if (!shader) throw new Error('Shader allocation failed');
         shaders.push(shader);
         gl.shaderSource(shader, source);
         gl.compileShader(shader);
-        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) throw new Error('Shader compilation failed');
+        stage = 'shader-compilation';
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+          const name = type === gl.VERTEX_SHADER ? 'Vertex' : 'Fragment';
+          console.warn(`[Black-hole illustration] ${name} shader compilation failed: ${gl.getShaderInfoLog(shader) || '(no compiler log)'}`);
+          throw new Error('Shader compilation failed');
+        }
       }
+      stage = 'program-allocation';
       program = gl.createProgram();
       if (!program) throw new Error('Program allocation failed');
       shaders.forEach(shader => gl.attachShader(program, shader));
       gl.linkProgram(program);
-      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw new Error('Program linking failed');
+      stage = 'program-link';
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.warn(`[Black-hole illustration] Program linking failed: ${gl.getProgramInfoLog(program) || '(no linker log)'}`);
+        throw new Error('Program linking failed');
+      }
       gl.useProgram(program);
+      stage = 'buffer-allocation';
       buffer = gl.createBuffer();
       if (!buffer) throw new Error('Buffer allocation failed');
       gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -209,7 +228,9 @@ function createWebGLRenderer(onStateChange) {
       gl.disable(gl.DEPTH_TEST);
       gl.disable(gl.BLEND);
       ready = true;
+      onFailure('');
     } catch {
+      onFailure(stage);
       disposeResources();
     } finally {
       shaders.forEach(shader => gl.deleteShader(shader));
@@ -220,6 +241,7 @@ function createWebGLRenderer(onStateChange) {
   function onLost(event) {
     event.preventDefault();
     ready = false;
+    onFailure('context-lost');
     onStateChange();
   }
   function onRestored() {
@@ -238,7 +260,11 @@ function createWebGLRenderer(onStateChange) {
       if (surface.height !== height) surface.height = height;
     },
     draw(time, pointer) {
-      if (!ready || destroyed || gl.isContextLost()) return false;
+      if (gl.isContextLost()) {
+        onFailure('context-lost');
+        return false;
+      }
+      if (!ready || destroyed) return false;
       gl.viewport(0, 0, surface.width, surface.height);
       gl.useProgram(program);
       gl.uniform2f(uniforms.resolution, surface.width, surface.height);
@@ -378,7 +404,11 @@ export function initBlackHole(canvas, pauseButton, interactionElement = canvas?.
   const target = { x: 0, y: 0 };
   const paused = () => manuallyPaused || (reduced && !optedIn);
   const active = () => !destroyed && !paused() && visible && !document.hidden && width > 0 && height > 0;
-  const gpu = createWebGLRenderer(() => { if (!destroyed) render(); });
+  let gpuFailure = '';
+  const gpu = createWebGLRenderer(
+    () => { if (!destroyed) render(); },
+    reason => { gpuFailure = reason; },
+  );
   if (pauseButton) pauseButton.disabled = false;
 
   function render() {
@@ -392,6 +422,8 @@ export function initBlackHole(canvas, pauseButton, interactionElement = canvas?.
     }
     const mode = onGPU ? 'webgl' : 'canvas';
     if (canvas.dataset.renderer !== mode) canvas.dataset.renderer = mode;
+    if (onGPU) delete canvas.dataset.rendererFallback;
+    else canvas.dataset.rendererFallback = gpuFailure || 'renderer-unavailable';
   }
 
   function updateButton() {
