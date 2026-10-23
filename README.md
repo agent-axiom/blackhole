@@ -2,8 +2,8 @@
 
 Source for the **Axiom Spacetime** research microsite: an animated introduction, an interactive explorer, and a growing manuscript collection.
 
-**Live preview:** <https://agent-axiom.github.io/blackhole/>  
-**Intended canonical domain:** `blackhole.kosarevsky.dev` — DNS connection pending.  
+**Website address:** <https://blackhole.kosarevsky.dev/>  
+**Connection status:** DNS configured; GitHub Pages HTTPS certificate pending.  
 **Website repository:** <https://github.com/agent-axiom/blackhole>  
 **Research author:** Dmitry Kosarevsky, Independent Researcher · <if.kosarevsky@gmail.com>
 
@@ -78,14 +78,13 @@ In the repository's **Settings → Pages**, select **GitHub Actions** as the pub
 
 The first [verification and deployment](https://github.com/agent-axiom/blackhole/actions/runs/39815739909) succeeded. The live GitHub Pages page was opened and its numerical explorer was checked. Desktop and 375px-wide mobile layouts were inspected before deployment.
 
-The requested custom domain is not connected yet. The DNS provider is Cloudflare, and the sign-in needed to modify that zone was not completed. The working GitHub Pages URL remains enabled. To finish the connection:
+### Custom domain connection · 23 October 2026
 
-1. In this repository's **Settings → Pages**, save `blackhole.kosarevsky.dev` as the custom domain.
-2. In the Cloudflare DNS zone for `kosarevsky.dev`, add a **CNAME** with name **`blackhole`**, target **`agent-axiom.github.io`**, TTL **Auto**, and proxy status **DNS only**. The target has no repository path.
-3. Wait for GitHub's DNS check and certificate provisioning, then enable **Enforce HTTPS** and verify the custom domain, PDF and explorer.
-4. Update the live-link status in this README when the custom domain has actually been verified.
+GitHub Pages is configured for `blackhole.kosarevsky.dev`. Cloudflare serves a DNS-only **CNAME** from `blackhole` to `agent-axiom.github.io`, with TTL **Auto**. The target has no repository path. Public DNS resolves to the GitHub Pages addresses.
 
-The page metadata already uses the intended canonical domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) when making the connection.
+The custom-domain HTTP endpoint and manuscript PDF respond successfully. The PDF SHA-256 still matches the frozen release above. GitHub is still provisioning the TLS certificate, and **Enforce HTTPS** is not yet available. HTTPS and browser access at the custom domain have not yet been verified. The default GitHub Pages URL currently redirects to the custom domain over HTTP.
+
+After the certificate is issued, enable **Enforce HTTPS**, verify the custom-domain page, PDF and numerical explorer, update the BibTeX URL, and replace this pending status with the observed verification result. Page metadata and the sitemap already use the intended canonical HTTPS domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) if the hosting configuration changes.
 
 ![Published site preview](docs/site-preview-2026-10-22.jpg)
 
