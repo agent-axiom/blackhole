@@ -3,7 +3,7 @@
 Source for the **Axiom Spacetime** research microsite: an animated introduction, an interactive explorer, and a growing manuscript collection.
 
 **Website address:** <https://blackhole.kosarevsky.dev/>  
-**Connection status:** DNS configured; GitHub Pages HTTPS certificate pending.  
+**Connection status:** HTTPS verified; HTTP redirects to HTTPS.  
 **Website repository:** <https://github.com/agent-axiom/blackhole>  
 **Research author:** Dmitry Kosarevsky, Independent Researcher · <if.kosarevsky@gmail.com>
 
@@ -82,11 +82,11 @@ The first [verification and deployment](https://github.com/agent-axiom/blackhole
 
 GitHub Pages is configured for `blackhole.kosarevsky.dev`. Cloudflare serves a DNS-only **CNAME** from `blackhole` to `agent-axiom.github.io`, with TTL **Auto**. The target has no repository path. Public DNS resolves to the GitHub Pages addresses.
 
-The custom-domain HTTP endpoint and manuscript PDF respond successfully. The PDF SHA-256 still matches the frozen release above. GitHub is still provisioning the TLS certificate, and **Enforce HTTPS** is not yet available. HTTPS and browser access at the custom domain have not yet been verified. The default GitHub Pages URL currently redirects to the custom domain over HTTP.
+The custom-domain HTTPS page and manuscript PDF were verified on 23 October 2026 using normal TLS certificate validation. **Enforce HTTPS** is enabled in GitHub Pages, and the HTTP endpoint returns a **301 redirect to HTTPS**. The PDF SHA-256 matches the frozen release above.
 
-After the certificate is issued, enable **Enforce HTTPS**, verify the custom-domain page, PDF and numerical explorer, update the BibTeX URL, and replace this pending status with the observed verification result. Page metadata and the sitemap already use the intended canonical HTTPS domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) if the hosting configuration changes.
+The BibTeX entry, page metadata and sitemap use the canonical HTTPS domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) if the hosting configuration changes.
 
-![Published site preview](docs/site-preview-2026-10-22.jpg)
+![Website preview from 22 October 2026, before custom-domain verification](docs/site-preview-2026-10-22.jpg)
 
 ## Reuse
 
