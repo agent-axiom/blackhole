@@ -93,7 +93,13 @@ The custom-domain HTTPS page and manuscript PDF were verified on 23 October 2026
 
 The BibTeX entry, page metadata and sitemap use the canonical HTTPS domain. Follow [GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) if the hosting configuration changes.
 
-![Website preview from 22 October 2026, before custom-domain verification](docs/site-preview-2026-10-22.jpg)
+### Interactive hero · 23 October 2026
+
+The cursor-responsive black-hole scene was published through the [successful Pages workflow](https://github.com/agent-axiom/blackhole/actions/runs/39947431744). The live page was checked for pointer following, pause/resume, and parameter and view changes in the scientific explorer. The exact potential-profile figure now appears in the research section.
+
+The review browser reported WebGL context unavailability, so these live checks exercised the Canvas2D fallback. The actual shader also compiled and rendered independently with Mesa/EGL at desktop and narrow dimensions; this does not replace a mobile-browser check. Separate real-Canvas checks verified reduced-motion behavior, offscreen and hidden-page suspension, paused-frame stability, and cleanup. Artifact and local-link verification passed without changing the frozen manuscript or numerical data.
+
+![Live website on 23 October 2026, showing the Canvas2D fallback](docs/black-hole-hero-2026-10-23.jpg)
 
 ## Reuse
 
