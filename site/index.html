@@ -14,7 +14,7 @@
   <meta property="og:image" content="https://blackhole.kosarevsky.dev/social.svg">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <link rel="stylesheet" href="./style.css?v=black-hole-1">
-  <script type="module" src="./app.js?v=black-hole-2"></script>
+  <script type="module" src="./app.js?v=paper-01-v2"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -25,7 +25,7 @@
         <span>AXIOM<span class="brand-sub">SPACETIME RESEARCH</span></span>
       </a>
       <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#explore">Explore</a><a href="#questions">What's next</a></nav>
-      <a class="header-link" href="./papers/paper-01.pdf" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a>
+      <a class="header-link" href="./papers/paper-01-v2.pdf" target="_blank" rel="noopener">Read the paper (v2) <span aria-hidden="true">↗</span></a>
     </header>
   </div>
   <main id="main">
@@ -48,7 +48,7 @@
           <figcaption>An artistic view of a black hole and its accretion disk.</figcaption>
         </figure>
       </section>
-      <div class="status-strip wrap"><span class="status-pill"><i></i> Manuscript · endorsement pending</span><p>One extended extremal mouth. A classical three-field model.</p><a href="#scope">Study boundary <span aria-hidden="true">↗</span></a></div>
+      <div class="status-strip wrap"><span class="status-pill"><i></i> Second edition · Preprint for independent review</span><p>One extended extremal mouth. A classical three-field model.</p><a href="#scope">Study boundary <span aria-hidden="true">↗</span></a></div>
   </div>
 
   <section id="research" class="findings light-section" aria-labelledby="findings-title">
@@ -90,7 +90,7 @@
         <div id="flux-breakdown" class="breakdown"><div class="breakdown-label">Where the master flux goes</div><div id="flux-bar" class="flux-bar" aria-hidden="true"></div><div class="flux-legend"><span><i class="mint"></i>Neutral transmitted <strong id="flux-neutral-t">—</strong></span><span><i class="cyan"></i>Other transmitted <strong id="flux-other-t">—</strong></span><span><i class="sand"></i>Neutral reflected <strong id="flux-neutral-r">—</strong></span><span><i class="rose"></i>Other reflected <strong id="flux-other-r">—</strong></span></div></div>
         <div id="resonance-breakdown" class="breakdown" hidden><div class="breakdown-label">Components of u<sub>0</sub> / a at the selected radius</div><div class="resonance-values"><span><i class="mint"></i>Y₁ · gravitational <strong id="resonance-g">—</strong></span><span><i class="cyan"></i>Y₂ · electromagnetic <strong id="resonance-d">—</strong></span><span><i class="sand"></i>Y₃ · Schwinger <strong id="resonance-x">—</strong></span></div></div>
       </div>
-      <div class="chart-footnotes"><p id="chart-caption">Solid points: computed neutral transmission. Dashed line: threshold matching prediction, not a proved limit.</p><p id="chart-note">These quantities describe conserved classical master flux. They are not qubit fidelity or a teleportation success probability.</p></div>
+      <div class="chart-footnotes"><p id="chart-caption">Solid points: computed neutral transmission. Dashed line: the threshold limit for the baseline operator proved in v2.</p><p id="chart-note">These quantities describe conserved classical master flux. They are not qubit fidelity or a teleportation success probability.</p></div>
       <noscript><p>The interactive plots require JavaScript. The saved numerical results remain available in the <a href="./data/scattering.csv">CSV data</a> and <a href="./papers/paper-01.pdf">manuscript</a>.</p></noscript>
       <div class="data-footer"><span>90 base solves · 12 refinement solves</span><a href="./data/scattering.csv" download>Download data <span aria-hidden="true">↓</span></a><a href="./data/provenance.json" target="_blank" rel="noopener">Inspect provenance <span aria-hidden="true">↗</span></a></div>
     </div>
@@ -99,9 +99,24 @@
   <section id="papers" class="papers-section light-section" aria-labelledby="papers-title">
     <div class="wrap">
       <div class="section-kicker"><span>03 / THE RESEARCH RECORD</span><span>MANUSCRIPTS, DATA &amp; METHODS</span></div>
-      <div class="section-heading"><h2 id="papers-title">Read it.<br><em>Question it.</em></h2><p>A growing collection of results, with their assumptions and limitations attached. The first manuscript is ready to inspect.</p></div>
-      <div id="paper-list"><article class="paper-card"><div class="paper-index"><span>PAPER</span><strong>01</strong><span>OCTOBER 2026</span></div><div class="paper-info"><span class="paper-state">Manuscript · arXiv endorsement pending</span><h3>Positive Factorization and a Zero-Energy Resonance of the Schwinger-Coupled Wormhole Mouth</h3><p>Dmitry Kosarevsky · Independent Researcher</p><p class="paper-abstract">An exact positivity identity, a unique bounded threshold resonance, and a conditional weak-attraction binding theorem for a specified three-channel extremal-mouth operator.</p><div class="paper-links"><a class="button button-dark" href="./papers/paper-01.pdf" target="_blank" rel="noopener">Read manuscript <span aria-hidden="true">↗</span></a><a class="text-link" href="./papers/paper-01.bib" download>Download citation <span aria-hidden="true">↓</span></a><span>8 pages · PDF</span></div></div></article></div>
-      <p class="record-note">Last status update: 22 October 2026. Endorsement requested; no final arXiv submission or external human peer review is recorded. The manuscript, derivation and saved data are public; the numerical solver source remains private. <a href="./papers/paper-01-derivation.md">Detailed derivation</a> · <a href="https://github.com/agent-axiom/blackhole" target="_blank" rel="noopener">Website source</a></p>
+      <div class="section-heading"><h2 id="papers-title">Read it.<br><em>Question it.</em></h2><p>A growing collection of results, with their assumptions and limitations attached. Both editions of the first manuscript are available.</p></div>
+      <div id="paper-list">
+        <article class="paper-card" id="paper-01">
+          <div class="paper-index"><span>PAPER</span><strong>01</strong><span>TWO EDITIONS</span></div>
+          <div class="paper-info">
+            <span class="paper-state">Second edition · Preprint for independent review</span>
+            <h3>Positive Factorization and Threshold Transmission for a Three-Channel Extremal-Mouth Operator</h3>
+            <p>Dmitry Kosarevsky · Independent Researcher · 21 November 2026</p>
+            <p class="paper-abstract">An explicit positive factorization, uniqueness of the bounded zero-energy solution, and a threshold transmission theorem for the specified baseline operator. The result concerns classical master flux, not a physical quantum channel.</p>
+            <div class="paper-links"><a class="button button-dark" href="./papers/paper-01-v2.pdf" target="_blank" rel="noopener">Read second edition <span aria-hidden="true">↗</span></a><span>17 pages · PDF</span></div>
+            <hr>
+            <span class="paper-state">First edition · October 2026</span>
+            <h3>Positive Factorization and a Zero-Energy Resonance of the Schwinger-Coupled Wormhole Mouth</h3>
+            <div class="paper-links"><a class="text-link" href="./papers/paper-01.pdf" target="_blank" rel="noopener">Read original edition <span aria-hidden="true">↗</span></a><a class="text-link" href="./papers/paper-01.bib" download>Download original citation <span aria-hidden="true">↓</span></a><span>8 pages · PDF</span></div>
+          </div>
+        </article>
+      </div>
+      <p class="record-note">The November edition is a preprint for independent review, not an arXiv submission or a peer-reviewed publication. The October edition and its accompanying derivation and saved numerical data remain unchanged. The numerical solver source remains private. <a href="./papers/paper-01-derivation.md">Detailed derivation</a> · <a href="https://github.com/agent-axiom/blackhole" target="_blank" rel="noopener">Website source</a></p>
     </div>
   </section>
 
@@ -109,7 +124,7 @@
     <div class="wrap">
       <div class="section-kicker"><span>04 / THE NEXT QUESTIONS</span><span>OPEN RESEARCH · NO RESULTS CLAIMED</span></div>
       <div class="section-heading"><h2 id="questions-title">A result opens<br><em>another question.</em></h2><p>Further papers will follow substantive results. These are the directions being investigated, not a promised publication schedule.</p></div>
-      <div class="question-list"><article class="question-row"><span class="question-number">01</span><div><span class="question-status">NEXT RESEARCH TARGET</span><h3>How fragile is the resonance?</h3><p>Determine how a weak local correction changes the bound-state scale and transmission near zero frequency. The challenge is a controlled threshold theorem for coupled inverse-square tails.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article><article class="question-row"><span class="question-number">02</span><div><span class="question-status">OPEN DIRECTION</span><h3>What changes between two mouths?</h3><p>Understand which results survive in a complete finite-throat geometry, with the matching conditions and both asymptotic regions treated together.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article><article class="question-row"><span class="question-number">03</span><div><span class="question-status">OPEN DIRECTION</span><h3>When does a field become a channel?</h3><p>Establish physical quantum normalization, an encoding, and a receiver before interpreting classical master-field transmission as quantum information transfer.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article></div>
+      <div class="question-list"><article class="question-row"><span class="question-number">01</span><div><span class="question-status">NEXT RESEARCH TARGET</span><h3>How fragile is the resonance?</h3><p>Determine how a weak local correction changes the bound-state scale and transmission near zero frequency. The baseline threshold theorem is now in the second edition. The effect of corrections and a guaranteed usable frequency range remain open.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article><article class="question-row"><span class="question-number">02</span><div><span class="question-status">OPEN DIRECTION</span><h3>What changes between two mouths?</h3><p>Understand which results survive in a complete finite-throat geometry, with the matching conditions and both asymptotic regions treated together.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article><article class="question-row"><span class="question-number">03</span><div><span class="question-status">OPEN DIRECTION</span><h3>When does a field become a channel?</h3><p>Establish physical quantum normalization, an encoding, and a receiver before interpreting classical master-field transmission as quantum information transfer.</p></div><span class="question-arrow" aria-hidden="true">↗</span></article></div>
     </div>
   </section>
 

@@ -166,7 +166,7 @@ export async function initExplorer() {
     const yTicks = Array.from({ length: 5 }, (_, i) => lo + (hi - lo) * i / 4);
     startChart(
       `Neutral-channel transmission, ell ${ell}, screening M ${M}`,
-      `Ten saved solver points on a logarithmic frequency axis. The vertical fraction axis is zoomed. A dotted line shows the unproved threshold matching prediction. Selected k ${selected.k}: neutral transmission ${percent(selected.Tneutral)}. Use the frequency slider or select a point.`,
+      `Ten saved solver points on a logarithmic frequency axis. The vertical fraction axis is zoomed. A dotted line shows the threshold limit proved for the baseline operator in the second edition. Selected k ${selected.k}: neutral transmission ${percent(selected.Tneutral)}. Use the frequency slider or select a point.`,
     );
     axes({
       xTicks: mobile.matches
@@ -182,7 +182,7 @@ export async function initExplorer() {
     const legendX = mobile.matches ? FRAME.left : 448;
     const legendY = mobile.matches ? 45 : 16;
     line(legendX, legendY, legendX + 29, legendY, { stroke: COLORS.sand, 'stroke-width': 1.6, 'stroke-dasharray': '3 6' });
-    label(legendX + 37, legendY + 4, 'T_match · prediction', { fill: COLORS.sand });
+    label(legendX + 37, legendY + 4, 'T₀ · threshold limit', { fill: COLORS.sand });
     path(rows.map(r => [x(r.k), y(r.Tneutral)]), COLORS.mint, { 'stroke-width': 1.5, opacity: .68 });
     line(x(selected.k), FRAME.top, x(selected.k), FRAME.bottom, {
       stroke: 'rgba(168,230,203,.35)', 'stroke-dasharray': '4 5',
@@ -212,7 +212,7 @@ export async function initExplorer() {
     setText('metric-main', percent(selected.Tneutral));
     setText('metric-label', 'Neutral transmitted master flux');
     setText('metric-detail', `ℓ = ${ell} · M = ${M} · saved sample ${index + 1} of 10`);
-    setText('chart-caption', 'Dots are computed samples. Thin connecting lines guide the eye; the dotted line is a threshold matching prediction, not a proved limit.');
+    setText('chart-caption', 'Dots are computed samples. Thin connecting lines guide the eye; the dotted line is the threshold limit for the baseline operator proved in v2.');
     setText('chart-note', `The vertical axis is zoomed. Selected flux-closure residual |R + T − 1| = ${scientific(Math.abs(selected.flux_error))}. This diagnostic is not an error bar or a quantum-state fidelity.`);
     const partition = [
       ['flux-neutral-t', selected.Tneutral, COLORS.mint, 'Neutral transmitted'],

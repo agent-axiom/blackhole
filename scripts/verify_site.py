@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "site"
 REVISION = "00bc6243983dfdc3bae3a15345bf73f9db3e6bc2"
 PDF_SHA256 = "625cc7318e702010465003028236e917cff1f3195b8d93809c471d6db2ead4e3"
+V2_PDF_SHA256 = "410c233281a5dffa32c82923118a0f8c5d51682a09f2fcc3bb6c3aeb6b393b1e"
 SOURCE_SHA256 = "713c530a622277d9b47124a993dcb90220397d6b1e591c145b6d9750bade77e0"
 FREQUENCIES = (1e-5, 3e-5, 1e-4, 3e-4, .001, .003, .01, .03, .1, .3)
 
@@ -122,6 +123,16 @@ def verify_papers(registry: dict, provenance: dict) -> int:
     require(first["number"] == "01" and first["source_revision"] == REVISION, "First-paper frozen revision changed.")
     require(first["pdf_sha256"] == PDF_SHA256 == provenance["manuscript_pdf_sha256"], "First-paper frozen PDF changed.")
     require(provenance["manuscript_source_revision"] == REVISION, "Provenance revision mismatch.")
+    v2, = first["editions"]
+    require(v2["version"] == 2 and v2["pages"] == 17, "Expected the 17-page second edition.")
+    require(v2["arxiv_id"] is None and v2["peer_reviewed"] is False, "Unexpected second-edition publication status.")
+    require(v2["pdf"] == "./papers/paper-01-v2.pdf", "Second-edition PDF path changed.")
+    require(v2["pdf_sha256"] == V2_PDF_SHA256, "Second-edition registry hash changed.")
+    v2_path = SITE / "papers/paper-01-v2.pdf"
+    require(v2_path.read_bytes().startswith(b"%PDF-") and digest(v2_path) == V2_PDF_SHA256, "Second-edition PDF does not match the verified copy.")
+    html = HTMLReferences()
+    html.feed((SITE / "index.html").read_text(encoding="utf-8"))
+    require(first["pdf"] in html.references and v2["pdf"] in html.references, "Both editions must be linked without JavaScript.")
     return len(papers)
 
 
@@ -168,7 +179,7 @@ def main() -> None:
     papers = verify_papers(read_json("data/research.json"), provenance)
     records = verify_data(provenance)
     links = verify_links()
-    print(f"Verified {papers} manuscript(s), including the frozen eight-page first-paper PDF.")
+    print(f"Verified {papers} manuscript(s), including both editions of the first paper (frozen v1 and v2 preprint).")
     print(f"Verified {records} saved scattering samples, source hashes and refinement provenance.")
     print(f"Verified {links} literal local asset/anchor references.")
     print("No research computation or external-link check was performed.")

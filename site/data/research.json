@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-10-22",
+  "updated": "2026-11-24",
   "project": "Axiom Spacetime",
   "papers": [
     {
@@ -17,7 +17,22 @@
       "source_revision": "00bc6243983dfdc3bae3a15345bf73f9db3e6bc2",
       "pdf_sha256": "625cc7318e702010465003028236e917cff1f3195b8d93809c471d6db2ead4e3",
       "arxiv_id": null,
-      "peer_reviewed": false
+      "peer_reviewed": false,
+      "editions": [
+        {
+          "version": 2,
+          "title": "Positive Factorization and Threshold Transmission for a Three-Channel Extremal-Mouth Operator",
+          "date_label": "21 November 2026",
+          "status": "preprint_for_independent_review",
+          "status_label": "Second edition · Preprint for independent review",
+          "summary": "An explicit positive factorization, uniqueness of the bounded zero-energy solution, and a threshold transmission theorem for the specified baseline operator. The result concerns classical master flux, not a physical quantum channel.",
+          "pdf": "./papers/paper-01-v2.pdf",
+          "pages": 17,
+          "pdf_sha256": "410c233281a5dffa32c82923118a0f8c5d51682a09f2fcc3bb6c3aeb6b393b1e",
+          "arxiv_id": null,
+          "peer_reviewed": false
+        }
+      ]
     }
   ]
 }
